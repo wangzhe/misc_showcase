@@ -15,6 +15,8 @@ class WechatController < ApplicationController
     @toUsername = config['FromUserName'][0]
     @time = config['CreateTime'][0]
 
+    @content = config['Content'][0]
+
     return render :template => "wechat/process_succeed.xml",
                   :formats => [:xml],
                   :content_type => 'application/xml'
