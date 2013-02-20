@@ -17,7 +17,7 @@ class WechatController < ApplicationController
 
     @content = config['Content'][0]
 
-    return render :template => "wechat/process_succeed.xml",
+    return render :template => "wechat/process_news.xml",
                   :formats => [:xml],
                   :content_type => 'application/xml'
   end
