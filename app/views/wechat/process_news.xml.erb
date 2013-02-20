@@ -6,13 +6,13 @@
     <ArticleCount>2</ArticleCount>
     <Articles>
         <item>
-            <Title>title1</Title>
+            <Title><%= @content %></Title>
             <Description>some <%= @content %> description</Description>
             <PicUrl>http://media.gizmodo.co.uk/wp-content/uploads/2013/01/Android-Happy2-e1357315066858.jpg</PicUrl>
             <Url>http://www.thoughtworks.com</Url>
         </item>
         <item>
-            <Title>title 2</Title>
+            <Title>not <%= @content %></Title>
             <Description>some not <%= @content %> description</Description>
             <PicUrl>http://www.bitdirect.nl/wp-content/uploads/2012/08/android_awesome.jpg</PicUrl>
             <Url>http://www.google.com</Url>
