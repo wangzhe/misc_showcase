@@ -2,12 +2,10 @@ require 'xmlsimple'
 
 class WechatController < ApplicationController
 
-  def hello
+  def greeting
     @echostr = params[:echostr]
 
-    return render :template => "wechat/hello",
-                  :formats => [:html],
-                  :content_type => 'text/html'
+    return render :text => @echostr
   end
 
   def talk
