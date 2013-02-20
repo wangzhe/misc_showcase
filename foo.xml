@@ -1,0 +1,8 @@
+<xml>
+  <ToUserName>TWTest</ToUserName>
+  <FromUserName>Jack</FromUserName>
+  <CreateTime>1348831860</CreateTime>
+  <MsgType>text</MsgType>
+  <Content>this is a scala not java</Content>
+  <MsgId>1234567890123456</MsgId>
+</xml>

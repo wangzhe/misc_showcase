@@ -3,6 +3,12 @@ MobileCoreAcceptenceServer::Application.routes.draw do
 
   get "home/index"
 
+  match "home/wechat" => "wechat#hello", :via => :get
+
+  match "home/test" => "wechat#talk", :via => :get
+
+  match "home/wechat" => "wechat#talk", :via => :post
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

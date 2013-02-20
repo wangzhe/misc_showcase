@@ -1,0 +1,3 @@
+rvm --create use ruby-1.9.3-p194@exchange-demo
+[ -d log ] || mkdir log
+export PATH=$PWD/bin:$PATH
