@@ -9,12 +9,11 @@ class WechatController < ApplicationController
   end
 
   def talk
-    p request.raw_post
-
-    config = XmlSimple.xml_in('foo.xml')
+    config = XmlSimple.xml_in(request.raw_post)
 
     @toFromname = config['ToUserName'][0]
     @toUsername = config['FromUserName'][0]
+    @time = config['CreateTime'][0]
 
     return render :template => "wechat/process_succeed.xml",
                   :formats => [:xml],
