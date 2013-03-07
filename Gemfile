@@ -1,7 +1,5 @@
 source 'http://rubygems.org'
 
-gem 'xml-simple'
-
 gem 'rails', '3.0.10'
 gem 'tlsmail'
 
@@ -31,4 +29,5 @@ gem 'sqlite3-ruby', :require => 'sqlite3'
 # and rake tasks are available in development mode:
 group :development, :test do
    #gem 'webrat'
+  gem "rspec-rails", "~> 2.0"
 end

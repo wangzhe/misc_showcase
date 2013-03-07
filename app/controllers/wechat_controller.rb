@@ -1,6 +1,5 @@
-require 'xmlsimple'
-
 class WechatController < ApplicationController
+  include WechatHelper
 
   def greeting
     @echostr = params[:echostr]
@@ -19,9 +18,7 @@ class WechatController < ApplicationController
 
     contents = @content.split(" ")
     #"signup username"
-    Notifier.signup_email(contents[1]).deliver if contents[0] == "signup" && contents[1] != nil
-
-
+    signup(@toUsername, contents) if contents[0] == "signup" && contents[1] != nil
 
     return render :template => "wechat/process_news.xml",
                   :formats => [:xml],
