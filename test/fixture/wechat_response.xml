@@ -1,0 +1,22 @@
+ <xml>
+   <ToUserName>Jack</ToUserName>
+   <FromUserName>WeChat Server</FromUserName>
+   <CreateTime>20130301</CreateTime>
+   <MsgType>news</MsgType>
+   <ArticleCount>2</ArticleCount>
+   <Articles>
+     <item>
+       <Title>signn zwang</Title>
+       <Description>some signn zwang description</Description>
+       <PicUrl>http://media.gizmodo.co.uk/wp-content/uploads/2013/01/Android-Happy2-e1357315066858.jpg</PicUrl>
+       <Url>http://www.thoughtworks.com</Url>
+     </item>
+     <item>
+       <Title>not signn zwang</Title>
+       <Description>some not signn zwang description</Description>
+       <PicUrl>http://www.bitdirect.nl/wp-content/uploads/2012/08/android_awesome.jpg</PicUrl>
+       <Url>http://www.google.com</Url>
+     </item>
+   </Articles>
+   <FuncFlag>1</FuncFlag>
+ </xml>

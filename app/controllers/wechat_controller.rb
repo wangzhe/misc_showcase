@@ -9,13 +9,19 @@ class WechatController < ApplicationController
   end
 
   def talk
-    config = XmlSimple.xml_in(request.raw_post)
+    config = params[:xml]
 
-    @toFromname = config['ToUserName'][0]
-    @toUsername = config['FromUserName'][0]
-    @time = config['CreateTime'][0]
+    @toFromname = config['ToUserName']
+    @toUsername = config['FromUserName']
+    @time = config['CreateTime']
 
-    @content = config['Content'][0]
+    @content = config['Content']
+
+    contents = @content.split(" ")
+    #"signup username"
+    Notifier.signup_email(contents[1]).deliver if contents[0] == "signup" && contents[1] != nil
+
+
 
     return render :template => "wechat/process_news.xml",
                   :formats => [:xml],
