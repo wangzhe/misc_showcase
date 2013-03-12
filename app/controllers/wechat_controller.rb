@@ -49,6 +49,7 @@ class WechatController < ApplicationController
   def signup_step_one(contents)
     random = signup(@toUsername, contents) if contents[1] != nil
     @content = t(:signup_verify) << random.to_s
+    "wechat/simple_text.xml"
   end
 
   def error
