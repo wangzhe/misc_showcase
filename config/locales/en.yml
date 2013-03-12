@@ -3,3 +3,5 @@
 
 en:
   hello: "Hello world"
+  signup_verify: "Please check your enterprise email account to find out verification code and reply -> verify "
+  signup_success: "Welcome to ThoughtWorks Enterprise Account. Now, you can ask WeChat as same as you ask Xiaofei :)"
