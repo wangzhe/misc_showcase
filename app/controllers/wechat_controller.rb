@@ -43,7 +43,7 @@ class WechatController < ApplicationController
       @content = t(:signup_success)
       return "wechat/simple_text.xml"
     end
-    raise error
+    return "wechat/error.xml"
   end
 
   def signup_step_one(contents)

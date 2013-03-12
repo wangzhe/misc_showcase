@@ -8,7 +8,8 @@ module WechatHelper
     User.pending_for_signup!(wechat_id, random)
 
     #send number to user
-    Notifier.signup_email(wechat_id, random).deliver
+    username = contents[1]
+    Notifier.signup_email(username, random).deliver
     random
   end
 
